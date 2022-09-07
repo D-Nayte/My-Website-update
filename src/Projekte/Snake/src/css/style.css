@@ -1,6 +1,6 @@
 @font-face {
   font-family: "RobotoMedium";
-  src: url(/src/fonts/Roboto-Medium.ttf);
+  src: url("../../../../fonts/Roboto-Medium.ttf");
 }
 
 * {
@@ -10,7 +10,7 @@
 
 @font-face {
   font-family: "RobotoMedium";
-  src: url(/src/fonts/Roboto-Black.ttf);
+  src: url("../../../../fonts/Roboto-Black.ttf");
 }
 
 header {
