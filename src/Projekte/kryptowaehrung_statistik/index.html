@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/src/img/" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/src/img/favicon/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/src/img/favicon/favicon-16x16.png" />
+    <link rel="manifest" href="/src/img/favicon/site.webmanifest" />
+    <link rel="mask-icon" href="/src/img/favicon/safari-pinned-tab.svg" color="#5bbad5" />
+    <link rel="shortcut icon" href="/src/img/favicon/favicon.ico" />
+    <meta name="msapplication-TileColor" content="#9f00a7" />
+    <meta name="msapplication-config" content="/src/img/favicon/browserconfig.xml" />
+    <meta name="theme-color" content="#ffffff" />
+    <script src="https://kit.fontawesome.com/554d91261a.js" crossorigin="anonymous" defer></script>
+
+    <link rel="stylesheet" href="./src/css/main.css" />
+    <link rel="stylesheet" href="./src/css/header.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <a class="back-btn" href="/index.html#projekte"
+        ><i class="fa-solid fa-angles-left"></i>
+        <p>Projekte</p></a
+      >
+      <h1>Krypto-Kurswerte</h1>
+    </header>
+
+    <article id="balance"></article>
+
+    <section id="main">
+      <article class="graph_container">
+        <div class="graph_inside">
+          <canvas id="graph"></canvas>
+        </div>
+
+        <div id="currency_container">
+          <button id="eur" value="EUR" class="currency active">Euro</button>
+          <button id="usd" value="USD" class="currency">US Dollar</button>
+          <button id="usd" value="GBP" class="currency">Ennglische Pfund</button>
+
+          <div class="flex_column date">
+            <label for="date_start">Von Datum:</label>
+            <input type="month" name="" id="date_start" class="date_input" />
+            <label for="date_end">Bis Datum:</label>
+            <input type="month" name="" id="date_end" class="date_input" />
+          </div>
+        </div>
+
+        <div id="crypto_container">
+          <button id="bitcoin" value="BTC" class="crypto active">Bitcoin</button>
+          <button id="ethereum" value="ETH" class="crypto">Ethereum</button>
+          <button id="binance_coin" value="BNB" class="crypto">Binance Coin</button>
+          <button id="tehter" value="USDT" class="crypto">Tether</button>
+          <button id="solana" value="SOL" class="crypto">Solana</button>
+        </div>
+      </article>
+
+      <article id="small_graph"></article>
+    </section>
+
+    <!-- Scripts---------------------------------------------- -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script type="module" src="./src/js/classes/date.js" defer></script>
+    <script type="module" src="./src/js/main.js" defer></script>
+  </body>
+</html>

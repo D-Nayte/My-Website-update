@@ -1,0 +1,154 @@
+@import "/node_modules/bootstrap/dist/css/bootstrap.css";
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: #1a1a1a;
+  overflow: hidden;
+  margin: 0;
+}
+
+@font-face {
+  font-family: "RobotoMedium";
+  src: url(/src/fonts/Roboto-Black.ttf);
+}
+header {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr;
+  justify-content: center;
+  height: 6rem;
+  background-color: #2c2c2c;
+  top: 0;
+  left: 0;
+  padding: 0 2rem;
+  z-index: 1;
+}
+
+header h1 {
+  color: #5ea0c2;
+  font-size: 3rem;
+  grid-column: 2/3;
+  grid-row: 1/2;
+  margin: 0;
+  place-self: center;
+}
+
+header p {
+  display: inline-block;
+  margin: 0;
+}
+
+header a {
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+
+header a,
+header p,
+header i {
+  text-decoration: none;
+  color: #777777;
+  font-family: "RobotoMedium";
+  font-size: 2rem;
+  align-self: center;
+  text-shadow: 0.5px 0.5px 1px rgb(129, 129, 129);
+  transition: 300ms;
+}
+
+header a:hover > i ~ p {
+  color: rgb(175, 175, 175);
+}
+
+header a:hover > i {
+  transition-delay: 150ms;
+  color: rgb(175, 175, 175);
+}
+
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 2.5rem;
+  }
+
+  header i,
+header p {
+    font-size: 2rem;
+  }
+}
+@media (max-width: 605px) {
+  header h1 {
+    font-size: 1.8rem;
+  }
+
+  header i,
+header p {
+    font-size: 1.3rem;
+  }
+}
+@media (max-width: 425px) {
+  header h1 {
+    grid-column: 2/4;
+    font-size: 1.7rem;
+  }
+
+  header i,
+header p {
+    font-size: 1.3rem;
+  }
+}
+#quotes-container {
+  width: 80%;
+  max-width: 90%;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 6rem 6rem;
+}
+
+.blend {
+  position: absolute;
+  width: 3.2rem;
+  height: 4.2rem;
+  background-color: rgb(55, 0, 255);
+  transition: 50ms;
+  margin-top: 0.5rem;
+  transform: translateX(-0.5rem);
+}
+
+.quotes {
+  width: 90%;
+  letter-spacing: 0.5rem;
+  display: block;
+  width: auto;
+  height: auto;
+  position: relative;
+  color: #fafafa;
+  font-size: 4rem;
+  text-shadow: 0 0 7px #2066fd, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #2066fd, 0 0 82px #2066fd, 0 0 92px #2066fd, 0 0 102px #2066fd, 0 0 151px #2066fd;
+  font-family: "RobotoMedium";
+  opacity: 1;
+}
+
+.opacity {
+  opacity: 0;
+}
+
+.quotes::after {
+  content: "";
+  display: block;
+  width: 70%;
+  height: 10%;
+  background-color: #2066fd;
+  margin-top: 6rem;
+  margin-left: auto;
+  margin-right: auto;
+  transform: perspective(150px) rotateX(60deg);
+  filter: blur(20px);
+  opacity: 0.5;
+}/*# sourceMappingURL=main.css.map */

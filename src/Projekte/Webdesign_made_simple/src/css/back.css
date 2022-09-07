@@ -1,0 +1,38 @@
+.back-btn {
+    height: 100%;
+    text-decoration: none;
+    color: #777777;
+    font-family: "RobotoMedium";
+    align-self: center;
+    text-shadow: .5px .5px 1px rgb(129, 129, 129);
+    transition: 300ms;
+    margin-right: 1rem;
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.back-btn,
+.back-btn p,
+.back-btn i {
+    text-decoration: none;
+    color: #777777;
+    font-size: 1rem;
+    align-self: center;
+    text-shadow: .5px .5px 1px rgb(129, 129, 129);
+    transition: 300ms;
+}
+
+.back-btn i {
+  margin-top: 1px;
+}
+
+.back-btn:hover > p {
+    color: rgb(175, 175, 175);
+}
+
+.back-btn:hover>i {
+    transition-delay: 150ms;
+    color: rgb(175, 175, 175);
+}

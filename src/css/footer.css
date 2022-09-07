@@ -1,0 +1,33 @@
+html {
+  font-size: 62.5%;
+}
+
+#footer {
+  position: relative;
+  width: 100%;
+  display: flex;
+  background-color: rgb(24, 24, 24);
+  color: #777777;
+  padding: 1rem 2rem;
+  justify-content: space-between;
+  align-items: flex-start;
+  box-shadow: 1px 0 3px 1px rgba(0, 0, 0, 0.6);
+  z-index: 3;
+}
+#footer a {
+  color: #777777;
+}
+#footer span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#footer span p {
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  #footer {
+    height: 7.5rem;
+  }
+}/*# sourceMappingURL=footer.css.map */

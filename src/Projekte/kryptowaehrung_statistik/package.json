@@ -1,0 +1,16 @@
+{
+  "name": "kryptowaehrung_statistik",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Andy Schunke <schunke.andy@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "chart.js": "^3.7.1",
+    "jquery": "^3.6.0"
+  }
+}

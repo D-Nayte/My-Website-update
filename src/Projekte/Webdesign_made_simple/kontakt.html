@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="de">
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Kontak</title>
+
+		<!-- Favicons -->
+		<link rel="apple-touch-icon" sizes="180x180" href="./src/img/favicons/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="./src/img/favicons/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="./src/img/favicons/favicon-16x16.png">
+		<link rel="manifest" href="./src/img/favicons/site.webmanifest">
+		<link rel="mask-icon" href="./src/img/favicons/safari-pinned-tab.svg" color="#5bbad5">
+		<link rel="shortcut icon" href="./src/img/favicons/favicon.ico">
+		<meta name="msapplication-TileColor" content="#f0f0f0">
+		<meta name="msapplication-config" content="./src/img/favicons/browserconfig.xml">
+		<meta name="theme-color" content="#ffffff">
+		<script src="https://kit.fontawesome.com/554d91261a.js" crossorigin="anonymous" defer></script>
+		<!-- google fonts -->
+
+<!-- autoren Stylesheet -->
+		<link rel="stylesheet" type="text/css" href="./src/css/styles.min.css">
+		<link rel="stylesheet" type="text/css" href="./src/css/back.css">
+
+	</head>
+
+	<body>
+  	 <nav id="header-nav">
+			<div class="container desktop-nav">
+				<div class="row">
+					<div class="col-6">
+						<a class="back-btn" href="/index.html#projekte"><i class="fa-solid fa-angles-left"></i><p>Projekte</p></a>
+						<a href="index.html" class="logo-link">
+							<img src="src/img/webdesign-logo.png" alt="">
+						</a>
+						<ul>
+							<li ><a href="index.html">Startseite</a></li>
+							<li ><a href="leistungen.html">Leistungen</a></li>
+							<li class="active"><a href="kontakt.html">Kontakt</a></li>
+							<li><a href="impressum.html">Impressum</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+
+<!-- Navigationsleiste für Desktop -->
+
+			<div class="container mobile-nav">
+				<div class="row">
+					<div class="col-6">
+
+						<a href="index.html" class="logo-link">
+							<img src="src/img/webdesign-logo.png" alt="">
+						</a>
+					<div class="mobile-nav-dropdown clearfix">
+						<div class="mobile-navButton">&equiv;</div>
+						<div class="mobileListeContent clearfix">
+								<ul>
+							 		<li><a href="index.html">Startseite</a></li>
+									<li><a  href="leistungen.html">Leistungen</a></li>
+									<li><a class="activeMobile" href="kontakt.html">Kontakt</a></li>
+									<li><a href="impressum.html">Impressum</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</nav>
+
+<!-- Navigationsleiste für Mobile -->
+
+		<header class="HeaderBannerklein"></header>
+		<section id="kontaktBereich">
+
+			<div class="container">
+				<div class="row">
+					<div class="col-6">
+						<header class="intro-container">
+							<h1>kontakt</h1>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+						</header>
+					</div>
+				</div>
+
+				<form id="kontaktFormular" class="intro-container" action="kontakt.html" method="post">
+				<div class="row">
+					<div class="col-3">
+						<label for="vorname" class="Screenreader">Vorname:</label>
+						<input id="vorname"type="text" name="vorname" value="" placeholder="Vorname">
+					</div>
+					<div class="col-3">
+						<label for="nachname" class="Screenreader">Nachnahme:</label>
+						<input id="nachnahme"type="text" name="nachnahme" value="" placeholder="Nachnahme">
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-6">
+						<label for="email" class="Screenreader">Email Adresse:</label>
+						<input id="email"type="text" name="email" value="" placeholder="E-mail Adresse" pattern="(?:[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*|\u0022(?:[\x01-\x08\x0b\x0c\x0e-\x1f\x21\x23-\x5b\x5d-\x7f]|\\[\x01-\x09\x0b\x0c\x0e-\x7f])*\u0022)@(?:(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?|\[(?:(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.){3}(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?|[a-z0-9-]*[a-z0-9]:(?:[\x01-\x08\x0b\x0c\x0e-\x1f\x21-\x5a\x53-\x7f]|\\[\x01-\x09\x0b\x0c\x0e-\x7f])+)\])" title="Bitte eine korrekte E-Mail adresse angeben">
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-6">
+						<label for="nachricht" class="Screenreader">Ihre Nachricht:</label>
+						<textarea id="nachricht" name="nachricht" rows="4" cols="80" placeholder="Nachricht"></textarea>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-6">
+						<label for="submitbtn" class="Screenreader">Abschicken Button:</label>
+						<button id="submitbtn"type="submit" name="formbutton" class="button-typ-3">Senden</button></div>
+					</div>
+				</form>
+		</div>
+		</section>
+
+
+	<!-- Footer -->
+		<footer id="footer">
+			<div class="container">
+				<div class="row">
+					<div class="col-6 clearfix">
+						<span> WEBDESIGN made simple by Andy Schunke (2022)</span>
+						<nav id="footer-nav">
+							<a href="impressum.html">Impressum</a>
+						</nav>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+		<script defer>document.addEventListener("touchstart", function(){}, true);</script>
+
+	</body>
+
+</html>

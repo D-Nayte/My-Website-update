@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Webdesign made simple</title>
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/src/img/" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/src/img/favicon/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/src/img/favicon/favicon-16x16.png" />
+    <link rel="manifest" href="/src/img/favicon/site.webmanifest" />
+    <link rel="mask-icon" href="/src/img/favicon/safari-pinned-tab.svg" color="#5bbad5" />
+    <link rel="shortcut icon" href="/src/img/favicon/favicon.ico" />
+    <meta name="msapplication-TileColor" content="#9f00a7" />
+    <meta name="msapplication-config" content="/src/img/favicon/browserconfig.xml" />
+    <meta name="theme-color" content="#ffffff" />
+    <script src="https://kit.fontawesome.com/554d91261a.js" crossorigin="anonymous" defer></script>
+    <meta name="msapplication-TileColor" content="#f0f0f0" />
+    <meta name="msapplication-config" content="./src/img/favicons/browserconfig.xml" />
+    <meta name="theme-color" content="#ffffff" />
+    <!-- google fonts -->
+
+    <!-- autoren Stylesheet -->
+    <link rel="stylesheet" type="text/css" href="./src/css/styles.css" />
+    <link rel="stylesheet" type="text/css" href="./src/css/back.css" />
+  </head>
+
+  <body>
+    <!-- Navigationsleiste für Desktop -->
+    <nav id="header-nav">
+      <div class="container desktop-nav">
+        <div class="row">
+          <div class="col-6">
+            <a class="back-btn" href="/index.html#projekte"
+              ><i class="fa-solid fa-angles-left"></i>
+              <p>Projekte</p></a
+            >
+            <a href="index.html" class="logo-link">
+              <img src="./src/img/webdesign-logo.png" alt="Logo von Webdesign made simple" />
+            </a>
+            <ul>
+              <li class="active"><a href="index.html">Startseite</a></li>
+              <li><a href="leistungen.html">Leistungen</a></li>
+              <li><a href="kontakt.html">Kontakt</a></li>
+              <li><a href="impressum.html">Impressum</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Navigationsleiste für Mobile -->
+
+      <div class="container mobile-nav">
+        <div class="row">
+          <div class="col-6">
+            <a href="index.html" class="logo-link">
+              <img src="src/img/webdesign-logo.png" alt="" />
+            </a>
+            <div class="mobile-nav-dropdown clearfix">
+              <div class="mobile-navButton">&equiv;</div>
+              <div class="mobileListeContent clearfix">
+                <ul>
+                  <li><a class="activeMobile" href="index.html">Startseite</a></li>
+                  <li><a href="leistungen.html">Leistungen</a></li>
+                  <li><a href="kontakt.html">Kontakt</a></li>
+                  <li><a href="impressum.html">Impressum</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Header banner -->
+
+    <header class="HeaderBanner"></header>
+
+    <!-- Newsletter Bereich  -->
+
+    <section class="newsLetterBereich">
+      <div class="container">
+        <div class="row">
+          <div class="col-4">
+            <p id="nL-text">
+              <span class="wichtiger-Text">Melde dich jetz für den Newsletter an, verpasse nichts mehr.</span>
+              <span class="unwichtig">Wir schicken dir nur Interessante Informationen </span>
+            </p>
+          </div>
+          <div class="col-2 clearfix">
+            <form id="nl-form" class="anmeldungNewsletter" action="index.html" method="post">
+              <label for="nb-email" class="Screenreader">E-Mail:</label>
+              <input
+                class="nl-email-input"
+                id="nb-email"
+                type="email"
+                name="email"
+                value=""
+                placeholder="Deine Email Adresse"
+                pattern="(?:[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*|\u0022(?:[\x01-\x08\x0b\x0c\x0e-\x1f\x21\x23-\x5b\x5d-\x7f]|\\[\x01-\x09\x0b\x0c\x0e-\x7f])*\u0022)@(?:(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?|\[(?:(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.){3}(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?|[a-z0-9-]*[a-z0-9]:(?:[\x01-\x08\x0b\x0c\x0e-\x1f\x21-\x5a\x53-\x7f]|\\[\x01-\x09\x0b\x0c\x0e-\x7f])+)\])"
+                title="gib eine gültige E-Mail Adresse ein"
+              />
+              <button id="nl-button" class="button-typ-1" type="submit" title="Anmeldung">&#10908;</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!---------------------- Animiertes Logo--------------- -->
+
+    <div id="animiertesLogo">
+      <img src="./src/img/webdesign-logo-klein.png" alt="Logo webdesign made simple" />
+    </div>
+
+    <!-- Leistungen Bereich -->
+
+    <section id="leistungen" class="textCenter">
+      <div class="container">
+        <div class="row">
+          <div class="col-6">
+            <header class="intro-container">
+              <h1>WEBDESIGN made simple</h1>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+                velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
+                anim id est laborum.
+              </p>
+            </header>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-3">
+            <article class="leistung-box">
+              <h2>Leistung #1</h2>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+                velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
+                anim id est laborum.
+              </p>
+              <a href="leistungen.html#leistung1" class="button-typ-2">Zu unseren Leistungen</a>
+            </article>
+          </div>
+          <div class="col-3">
+            <article class="leistung-box">
+              <h2>Leistung #2</h2>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+                velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
+                anim id est laborum.
+              </p>
+              <a href="leistungen.html#leistung2" class="button-typ-2">Zu unseren Leistungen</a>
+            </article>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-3">
+            <article class="leistung-box">
+              <h2>Leistung #3</h2>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+                velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
+                anim id est laborum.
+              </p>
+              <a href="leistungen.html#leistung3" class="button-typ-2">Zu unseren Leistungen</a>
+            </article>
+          </div>
+          <div class="col-3">
+            <article class="leistung-box">
+              <h2>Leistung #4</h2>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+                velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
+                anim id est laborum.
+              </p>
+              <a href="leistungen.html#leistung4" class="button-typ-2">Zu unseren Leistungen</a>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Video Bereich -->
+
+    <section id="video-bereich">
+      <div class="container">
+        <div class="row">
+          <div class="col-6">
+            <header class="intro-container textCenter">
+              <h1>Das sind wir</h1>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+                velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
+                anim id est laborum.
+              </p>
+            </header>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-6">
+            <video src="./src/mov/WEBDESIGN+made+simple+-+Trailer.mp4" controls id="video">
+              <p>Dieses Video ist Aktuell nicht verfügbar!</p>
+            </video>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!---Service Brereich----------------------->
+
+    <section id="service-bereich">
+      <div class="container">
+        <div class="row">
+          <div class="col-6">
+            <header class="intro-container textCenter">
+              <h1>Unsere Services</h1>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+                velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
+                anim id est laborum.
+              </p>
+            </header>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-2">
+            <article class="textCenter service-box">
+              <div id="günstig-icon" class="service-icon"></div>
+              <h1>Günstige Angebopte</h1>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                veniam.
+              </p>
+            </article>
+          </div>
+          <div class="col-2">
+            <article class="textCenter service-box">
+              <div id="schnell-icon" class="service-icon"></div>
+              <h1>Schnelle Lieferung</h1>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                veniam.
+              </p>
+            </article>
+          </div>
+          <div class="col-2">
+            <article class="textCenter service-box">
+              <div id="modern-icon" class="service-icon"></div>
+              <h1>Mordernes Design</h1>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                veniam.
+              </p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Über uns Bereich -->
+
+    <section id="über-uns-Bereich">
+      <div class="container">
+        <div class="row">
+          <div class="col-6">
+            <header class="intro-container textCenter">
+              <h1>Das sind Wir</h1>
+            </header>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-6">
+            <article id="über-uns-container">
+              <p>
+                I'm baby cold-pressed yuccie locavore 8-bit banjo man bun fixie taxidermy. Yr authentic actually kombucha wolf schlitz leggings biodiesel,
+                sriracha vegan flexitarian banh mi fixie. Bushwick before they sold out occupy pug. Plaid keytar godard shaman. Polaroid cronut microdosing art
+                party.Marfa ugh ethical church-key artisan enamel pin banjo pop-up poke affogato trust fund blog. Marfa vegan pop-up, raw denim fingerstache
+                retro cliche distillery typewriter chia pour-over. Austin whatever jean shorts, bitters offal banh mi gentrify shaman succulents messenger bag
+                taxidermy. PBR&B VHS XOXO subway tile, vaporware viral put a bird on it chartreuse cloud bread salvia yr enamel pin poke. XOXO echo park
+                vexillologist slow-carb occupy selvage squid neutra banh mi tbh health goth kickstarter.
+              </p>
+              <p>
+                Cloud bread taiyaki ennui, flannel venmo deep v listicle. Cray tacos pug pork belly, coloring book pickled hella cronut marfa squid chambray.
+                Kickstarter cardigan yr poutine truffaut organic, keffiyeh shoreditch street art vice narwhal master cleanse pabst vegan. Marfa beard pok pok
+                meh gochujang.Marfa ugh ethical church-key artisan enamel pin banjo pop-up poke affogato trust fund blog. Marfa vegan pop-up, raw denim
+                fingerstache retro cliche distillery typewriter chia pour-over. Austin whatever jean shorts, bitters offal banh mi gentrify shaman succulents
+                messenger bag taxidermy. PBR&B VHS XOXO subway tile, vaporware viral put a bird on it chartreuse cloud bread salvia yr enamel pin poke. XOXO
+                echo park vexillologist slow-carb occupy selvage squid neutra banh mi tbh health goth kickstarter.
+              </p>
+              <p>
+                Marfa ugh ethical church-key artisan enamel pin banjo pop-up poke affogato trust fund blog. Marfa vegan pop-up, raw denim fingerstache retro
+                cliche distillery typewriter chia pour-over. Austin whatever jean shorts, bitters offal banh mi gentrify shaman succulents messenger bag
+                taxidermy. PBR&B VHS XOXO subway tile, vaporware viral put a bird on it chartreuse cloud bread salvia yr enamel pin poke. XOXO echo park
+                vexillologist slow-carb occupy selvage squid neutra banh mi tbh health goth kickstarter.Marfa ugh ethical church-key artisan enamel pin banjo
+                pop-up poke affogato trust fund blog. Marfa vegan pop-up, raw denim fingerstache retro cliche distillery typewriter chia pour-over. Austin
+                whatever jean shorts, bitters offal banh mi gentrify shaman succulents messenger bag taxidermy. PBR&B VHS XOXO subway tile, vaporware viral put
+                a bird on it chartreuse cloud bread salvia yr enamel pin poke. XOXO echo park vexillologist slow-carb occupy selvage squid neutra banh mi tbh
+                health goth kickstarter.
+              </p>
+              <img src="./src/img/webdesign-logo-vertical.png" alt="" />
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ---------------------- Footer-------------------->
+    <footer id="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-6 clearfix">
+            <span> WEBDESIGN made simple by Andy Schunke (2022)</span>
+            <nav id="footer-nav">
+              <a href="impressum.html">Impressum</a>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script defer>
+      document.addEventListener("touchstart", function () {}, true);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="DE">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://kit.fontawesome.com/554d91261a.js" crossorigin="anonymous" defer></script>
+    <link rel="stylesheet" href="./subcounter.css" />
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/src/img/" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/src/img/favicon/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/src/img/favicon/favicon-16x16.png" />
+    <link rel="manifest" href="/src/img/favicon/site.webmanifest" />
+    <link rel="mask-icon" href="/src/img/favicon/safari-pinned-tab.svg" color="#5bbad5" />
+    <link rel="shortcut icon" href="/src/img/favicon/favicon.ico" />
+    <meta name="msapplication-TileColor" content="#9f00a7" />
+    <meta name="msapplication-config" content="/src/img/favicon/browserconfig.xml" />
+    <meta name="theme-color" content="#ffffff" />
+
+    <title>Overlay: Sub Count</title>
+  </head>
+  <body>
+    <header>
+      <a class="back-btn" href="/index.html#projekte"
+        ><i class="fa-solid fa-angles-left"></i>
+        <p>Projekte</p></a
+      >
+      <h1>Twitch Overlay: Sub Count</h1>
+    </header>
+
+    <section class="overlay">
+      <div class="container">
+        <h1 class="typ_goal">Sub Count</h1>
+        <div class="rahmen">
+          <div class="inline"></div>
+          <p class="text_nummer"></p>
+        </div>
+      </div>
+
+      <form action="test_overlay" id="test_overlay" method="get">
+        <label for="ziel" class="screenreader">Sub Goal</label>
+        <input type="number" name="numbers" id="ziel" placeholder="Sub Goal" />
+        <label for="current_subs" class="screenreader">current Subs</label>
+        <input type="number" name="current_subs" id="current_subs" placeholder="current Subs" />
+        <label for="add_sub" class="screenreader">add Subs</label>
+        <input type="number" name="add_sub" id="add_sub" placeholder="add Sub(s)" />
+        <button type="submit" id="test_btn">Test it</button>
+        <button type="reset" style="display: none" id="reset_btn"></button>
+      </form>
+    </section>
+
+    <script src="./zähler.js"></script>
+    <script src="./subcounter.js"></script>
+  </body>
+</html>

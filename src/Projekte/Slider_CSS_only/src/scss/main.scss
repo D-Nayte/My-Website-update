@@ -1,0 +1,257 @@
+// @use "./abstracts/" as *;
+@use "./abstracts/fonts" as *;
+
+// Generelles
+
+html {
+  font-size: 62.5%;
+  font-family: $RobotoBold;
+}
+
+header {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr;
+  justify-content: center;
+  height: 6rem;
+  background-color: #2c2c2c;
+  top: 0;
+  left: 0;
+  padding: 0 2rem;
+  z-index: 1;
+}
+
+header h1 {
+  color: #5ea0c2;
+  font-size: 3rem;
+  grid-column: 2/3;
+  grid-row: 1/2;
+  margin: 0;
+  place-self: center;
+}
+
+header p {
+  display: inline-block;
+  margin: 0;
+}
+
+header a {
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+
+header a,
+header p,
+header i {
+  text-decoration: none;
+  color: #777777;
+  font-family: "RobotoMedium";
+  font-size: 2rem;
+  align-self: center;
+  text-shadow: 0.5px 0.5px 1px rgb(129, 129, 129);
+  transition: 300ms;
+}
+
+header a:hover > i ~ p {
+  color: rgb(175, 175, 175);
+}
+
+header a:hover > i {
+  transition-delay: 150ms;
+  color: rgb(175, 175, 175);
+}
+
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 2.5rem;
+  }
+
+  header i,
+  header p {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 605px) {
+  header h1 {
+    font-size: 1.8rem;
+  }
+  header i,
+  header p {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 425px) {
+  header h1 {
+    grid-column: 2/4;
+    font-size: 1.7rem;
+  }
+
+  header i,
+  header p {
+    font-size: 1.3rem;
+  }
+}
+
+body {
+  margin: 0;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  background: rgb(33, 153, 255);
+  background: radial-gradient(circle, rgba(33, 153, 255, 1) 0%, rgba(62, 62, 62, 1) 100%);
+}
+
+h1,
+h2,
+h4,
+h5,
+p {
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+#slideshow-container {
+  position: relative;
+  width: 50vw;
+  margin-top: 2rem;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  box-shadow: 1px 1px 6px 3px rgba($color: #000000, $alpha: 0.6);
+}
+
+// button funktionalität---------------
+.btn {
+  position: absolute;
+  width: 5rem;
+  height: 1rem;
+  background-color: rgba($color: #000000, $alpha: 0.4);
+  z-index: 1;
+  color: black;
+  border-radius: 2rem;
+  border: none;
+  margin-bottom: 1rem;
+  box-shadow: 1px 1px 3px 0px rgba($color: #000000, $alpha: 0.4);
+  transition: 250ms;
+}
+
+.setter1 {
+  transform: translateX(-165%);
+}
+.setter2 {
+  transform: translateX(-55%);
+}
+.setter3 {
+  transform: translateX(55%);
+}
+.setter4 {
+  transform: translateX(165%);
+}
+
+.btn:hover {
+  background-color: rgba($color: #ffff, $alpha: 0.6);
+}
+
+.btn:focus {
+  background-color: rgba($color: #ffff, $alpha: 0.1);
+  box-shadow: 1px 1px 3px 0px rgba($color: #ffff, $alpha: 0.9);
+}
+
+.setter1:hover ~ #slider,
+.setter1:focus ~ #slider {
+  transform: translateX(0px);
+}
+
+.setter2:hover ~ #slider,
+.setter2:focus ~ #slider {
+  transform: translateX(-100%);
+}
+.setter3:hover ~ #slider,
+.setter3:focus ~ #slider {
+  transform: translateX(-200%);
+}
+.setter4:hover ~ #slider,
+.setter4:focus ~ #slider {
+  transform: translateX(-300%);
+}
+
+// slider raster---------------------------
+#slider {
+  position: relative;
+  display: flex;
+  transition: 450ms;
+  border-radius: 1rem;
+  width: 50vw;
+  height: auto;
+}
+
+.item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+
+  img {
+    width: 50vw;
+    height: auto;
+    aspect-ratio: 16/9;
+  }
+
+  .nummertext {
+    position: absolute;
+    font-size: 2rem;
+    top: 0;
+    left: 0;
+    margin: 1rem;
+    color: rgba($color: #d1d1d1, $alpha: 1);
+    text-shadow: 0 0 3px rgba($color: #000000, $alpha: 1);
+  }
+  .captions {
+    display: block;
+    font-size: 2rem;
+    position: absolute;
+    bottom: 0px;
+    color: black;
+    z-index: 2;
+    margin-bottom: 3rem;
+    color: rgba($color: #d6d6d6, $alpha: 1);
+    text-shadow: 0 0 3px rgba($color: #000000, $alpha: 1);
+  }
+}
+
+@media (max-width: 768px) {
+  #slideshow-container,
+  #slider,
+  .item img {
+    width: 55vw;
+  }
+
+  .item {
+    .nummertext {
+      font-size: 1rem;
+      margin: 0.5rem;
+    }
+    .captions {
+      font-size: 1rem;
+    }
+  }
+}
+
+@media (max-width: 460px) {
+  .btn {
+    width: 3.5rem;
+  }
+}

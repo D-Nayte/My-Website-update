@@ -1,0 +1,285 @@
+* {
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "JellyBelly";
+  src: url(./src/fonts/JellyBelly.ttf) format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "October_Crow";
+  src: url(./src/fonts/October_Crow.ttf) format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "RobotoMedium";
+  src: url(/src/fonts/Roboto-Black.ttf);
+}
+
+html {
+  font-size: 62.5%;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr;
+  justify-content: center;
+  background-color: #2c2c2c;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 1rem 2rem;
+  z-index: 1;
+}
+
+header h1 {
+  color: rgb(146, 221, 255);
+  font-size: 2rem;
+  grid-column: 2/3;
+  grid-row: 1/2;
+  margin: 0;
+  justify-self: center;
+  align-self: center;
+}
+
+header p {
+  display: inline-block;
+  margin: 0;
+}
+
+header a {
+  grid-column: 1/2;
+  grid-row: 1/2;
+  place-self: center start;
+}
+
+header a,
+header p,
+header i {
+  text-decoration: none;
+  color: #777777;
+  font-family: "RobotoMedium";
+  font-size: 1.5rem;
+  align-self: center;
+  text-shadow: 0.5px 0.5px 1px rgb(129, 129, 129);
+  transition: 300ms;
+}
+
+header a:hover > i ~ p {
+  color: rgb(175, 175, 175);
+}
+
+header a:hover > i {
+  transition-delay: 150ms;
+  color: rgb(175, 175, 175);
+}
+
+body {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: rgb(43, 219, 252);
+  background: linear-gradient(216deg, rgb(32, 159, 182) 19%, rgb(97, 172, 102) 89%);
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin: 0;
+  padding: 0;
+}
+
+section {
+  width: 100%;
+  transform: scale(1);
+}
+
+.container {
+  width: 100%;
+  height: auto;
+  display: grid;
+  grid-template-columns: 1fr 0.5fr 1fr;
+  grid-template-rows: 1fr 0.5fr 0.5fr;
+  justify-content: center;
+  align-items: center;
+}
+
+span {
+  margin-top: 0;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.822);
+  text-align: center;
+}
+
+#beanboozled {
+  width: 90%;
+  height: 100%;
+  min-width: 261px;
+  grid-column: 2/3;
+  grid-row: 1/2;
+  transform: translateX(1.5vw) translateY(1vw);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: 4.4vw bottom;
+  transition: all 1s;
+}
+
+#beanName {
+  font-size: 65px;
+  padding-left: 50px;
+  text-align: center;
+}
+
+.hot {
+  display: block;
+  font-family: "JellyBelly";
+  font-style: normal;
+  font-size: 4vw;
+  color: #8ffe96;
+  transform: scale(0.5);
+  transition: 500ms;
+}
+
+.flopp {
+  display: inline-block;
+  font-family: "October_Crow";
+  font-style: normal;
+  font-size: 3.5vw;
+  color: #2bdbfc;
+  transform: scale(0.5);
+  transition: 500ms;
+}
+
+.emoji {
+  font-size: 5vw;
+  display: inline-grid;
+  color: bisque;
+  text-shadow: 0.5px 1.5px 3px rgba(0, 0, 0, 0.822);
+  display: flex;
+  margin-left: 2rem;
+  margin-right: 1rem;
+}
+
+.zwei {
+  display: flex;
+  justify-content: end;
+  width: 100%;
+  grid-column: 1/2;
+  grid-row: 2;
+  text-align: right;
+}
+
+.drei {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  grid-column: 2/3;
+  grid-row: 2;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.vier {
+  display: flex;
+  justify-content: start;
+  width: 100%;
+  grid-column: 3/4;
+  grid-row: 2;
+  place-self: center center;
+}
+
+.btn {
+  width: 30%;
+  height: 40%;
+  place-self: end center;
+  grid-column: 2/3;
+  grid-row: 3/3;
+  font-size: 2rem;
+  border-radius: 15px;
+  background-color: #20f8c2;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  transition: opacity 2s;
+}
+
+.btn:hover {
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.8);
+}
+
+@media (max-width: 987px) {
+  .hot {
+    font-size: 4vw;
+  }
+
+  .flopp {
+    font-size: 3vw;
+  }
+
+  .emoji {
+    font-size: 4vw;
+  }
+
+  #beanboozled {
+    width: 20vw;
+    height: auto;
+    min-width: 130px;
+  }
+
+  .btn {
+    width: auto;
+    height: auto;
+    font-size: 2vw;
+  }
+}
+
+@media (max-width: 768px) {
+  header h1 {
+    grid-column: 2/4;
+    font-size: 1.8rem;
+    margin-right: auto;
+  }
+
+  header i,
+  header p {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 605px) {
+  header h1 {
+    font-size: 1.3rem;
+  }
+  header i,
+  header p {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 425px) {
+  #beanboozled {
+    width: 25vw !important;
+    height: auto;
+    min-width: 1px;
+  }
+
+  header h1 {
+    grid-column: 2/4;
+    font-size: 1rem;
+  }
+
+  header i,
+  header p {
+    font-size: 1rem;
+  }
+
+  .btn {
+    box-shadow: 0.3px 0.3px 0.5px rgba(0, 0, 0, 0.5);
+  }
+}

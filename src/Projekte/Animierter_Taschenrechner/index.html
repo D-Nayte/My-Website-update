@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://kit.fontawesome.com/554d91261a.js" crossorigin="anonymous" defer></script>
+    <link rel="stylesheet" href="./src/css/taschenrechner.css" />
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/src/img/" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/src/img/favicon/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/src/img/favicon/favicon-16x16.png" />
+    <link rel="manifest" href="/src/img/favicon/site.webmanifest" />
+    <link rel="mask-icon" href="/src/img/favicon/safari-pinned-tab.svg" color="#5bbad5" />
+    <link rel="shortcut icon" href="/src/img/favicon/favicon.ico" />
+    <meta name="msapplication-TileColor" content="#9f00a7" />
+    <meta name="msapplication-config" content="/src/img/favicon/browserconfig.xml" />
+    <meta name="theme-color" content="#ffffff" />
+
+    <title>Animatet Calculator</title>
+  </head>
+  <body>
+    <header>
+      <a class="back-btn" href="/index.html#projekte"
+        ><i class="fa-solid fa-angles-left"></i>
+        <p>Projekte</p></a
+      >
+      <h1>Animatet Calculator</h1>
+    </header>
+
+    <div id="background">
+      <div class="bild">
+        <img id="taschenrechner_licht" onklick="licht" class="operator" src="./img/rechner_licht.png" alt="Taschenrechner_licht" />
+        <img id="taschenrechner" src="./img/—Pngtree—calculator_1941129.png" alt="Taschenrechner" />
+        <div id="grid_container">
+          <div id="grid">
+            <div id="screen"><input id="input" type="text" /></div>
+            <div id="number1"></div>
+            <div id="number2"></div>
+            <div id="number3"></div>
+            <div id="number4"></div>
+            <div id="number5"></div>
+            <div id="number6"></div>
+            <div id="number7"></div>
+            <div id="number8"></div>
+            <div id="number9"></div>
+            <div id="plus" class="operator"></div>
+            <div id="number0"></div>
+            <div id="minus" class="operator"></div>
+            <div id="multi" class="operator"></div>
+            <div id="durch" class="operator"></div>
+            <div id="summe" class="operator"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="block">
+        <img id="s_block" src="./img/block.png" alt="Schreibblock" />
+        <span><p id="ergebniss"></p></span>
+      </div>
+
+      <audio id="pencil">
+        <source src="src/sounds/Pencil Write 8.mp3" type="audio/wav" />
+      </audio>
+    </div>
+
+    <script src="src/js/taschenrechner.js"></script>
+  </body>
+</html>

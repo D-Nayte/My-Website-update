@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://kit.fontawesome.com/554d91261a.js" crossorigin="anonymous" defer></script>
+    <link rel="stylesheet" href="/src/Projekte/Snake/src/css/style.css" />
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/src/img/" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/src/img/favicon/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/src/img/favicon/favicon-16x16.png" />
+    <link rel="manifest" href="/src/img/favicon/site.webmanifest" />
+    <link rel="mask-icon" href="/src/img/favicon/safari-pinned-tab.svg" color="#5bbad5" />
+    <link rel="shortcut icon" href="/src/img/favicon/favicon.ico" />
+    <meta name="msapplication-TileColor" content="#9f00a7" />
+    <meta name="msapplication-config" content="/src/img/favicon/browserconfig.xml" />
+    <meta name="theme-color" content="#ffffff" />
+
+    <title>Snake</title>
+  </head>
+  <body>
+    <header>
+      <a class="back-btn" href="/index.html#projekte"
+        ><i class="fa-solid fa-angles-left"></i>
+        <p>Projekte</p></a
+      >
+      <h1>Snake</h1>
+    </header>
+    <div class="snake-container">
+      <p>Score: <span class="score"></span></p>
+
+      <canvas id="background"></canvas>
+
+      <div class="gameover">
+        <h1>GAMEOVER!</h1>
+        <h4>Total Score = <span class="score"></span></h4>
+      </div>
+
+      <div id="buttons-snake">
+        <button id="start">Start&nbsp;&nbsp;&nbsp;&crarr;</button>
+        <img class="arrows" src="/src/Projekte/Snake/src/img/arrow_roh.png" alt="" />
+      </div>
+    </div>
+
+    <script src="/src/Projekte/Snake/snake.js" defer></script>
+  </body>
+</html>

@@ -1,0 +1,73 @@
+html {
+  font-size: 62.5%;
+}
+
+#projekte {
+  width: 100%;
+  height: auto;
+  padding: 4rem 2rem;
+  background: rgb(29, 29, 29);
+  background: linear-gradient(180deg, rgb(29, 29, 29) 0%, rgb(31, 31, 31) 100%);
+  justify-content: center;
+  align-items: center;
+}
+#projekte h1 {
+  color: var(--highlight_color);
+  text-shadow: 3px 3px var(--first_color);
+  margin-bottom: 2rem;
+}
+#projekte .projekt-container {
+  width: 100%;
+  display: flex;
+  row-gap: 1.7vw;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+#projekte .projekt-container a {
+  width: 15%;
+  height: auto;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+#projekte .projekt-container img {
+  width: 100%;
+}
+#projekte .projekt-container p {
+  margin: 0;
+  color: #2868ff;
+}
+
+@media (max-width: 1024px) {
+  .projekt-container a {
+    width: 30% !important;
+  }
+}
+@media (max-width: 768px) {
+  .projekt-container a {
+    width: 40% !important;
+  }
+}
+@media (max-width: 570px) {
+  .projekt-container {
+    row-gap: 2.3rem !important;
+  }
+  .projekt-container p {
+    font-size: 0.9rem !important;
+  }
+}
+@media (max-width: 420px) {
+  #projekte {
+    padding: 2rem 2rem;
+  }
+
+  .projekt-container a {
+    width: 45% !important;
+  }
+  .projekt-container p {
+    font-size: 0.7rem !important;
+  }
+}/*# sourceMappingURL=projekte.css.map */

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://kit.fontawesome.com/554d91261a.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./src/css/main.css" />
+    <title>CSS only Slider</title>
+  </head>
+  <body>
+    <header>
+      <a class="back-btn" href="/index.html#projekte">
+        <i class="fa-solid fa-angles-left"></i>
+        <p>Projekte</p></a
+      >
+      <h1>Slider CSS only</h1>
+    </header>
+
+    <div id="slideshow-container">
+      <button class="btn setter1"></button>
+      <button class="btn setter2"></button>
+      <button class="btn setter3"></button>
+      <button class="btn setter4"></button>
+      <div id="slider">
+        <div class="item item1">
+          <div class="nummertext">1/4</div>
+          <img src="./src/img/blueberries.jpg" alt="" />
+          <p class="captions">Blueberry</p>
+        </div>
+
+        <div class="item item2">
+          <div class="nummertext">2/4</div>
+          <img src="./src/img/girl-color.jpg" alt="" />
+          <p class="captions">Color Dreams</p>
+        </div>
+
+        <div class="item item3">
+          <div class="nummertext">3/4</div>
+          <img src="./src/img/girl-happy.jpg" alt="" />
+          <p class="captions">Just happy</p>
+        </div>
+
+        <div class="item item4">
+          <div class="nummertext">4/4</div>
+          <img src="./src/img/glacier.jpg" alt="" />
+          <p class="captions">Gletscher</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Scripts---------------------------------------------- -->
+    <script src="./node_modules/jquery/dist/jquery.min.js" defer></script>
+    <script type="module" src="./src/js/main.js" defer></script>
+  </body>
+</html>

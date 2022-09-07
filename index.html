@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Website Andy Schunke</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Fontawesome -->
+    <script src="https://kit.fontawesome.com/554d91261a.js" crossorigin="anonymous"></script>
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="./src/img/" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./src/img/favicon/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="./src/img/favicon/favicon-16x16.png" />
+    <link rel="manifest" href="./src/img/favicon/site.webmanifest" />
+    <link rel="mask-icon" href="./src/img/favicon/safari-pinned-tab.svg" color="#5bbad5" />
+    <link rel="shortcut icon" href="./src/img/favicon/favicon.ico" />
+    <meta name="msapplication-TileColor" content="#9f00a7" />
+    <meta name="msapplication-config" content="./src/img/favicon/browserconfig.xml" />
+    <meta name="theme-color" content="#ffffff" />
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="./src/css/main.min.css" />
+  </head>
+
+  <body style="background-color: rgb(22, 22, 22)">
+    <!-- Loader -->
+    <aside id="loading-container" class="loading">
+      <div class="loading-item"></div>
+    </aside>
+    <!-- Navigation -->
+    <section>
+      <nav id="navigation">
+        <section id="navFull">
+          <div class="dreieck-container">
+            <div class="dreieck-relative">
+              <div class="black-edge edge-left"></div>
+              <div class="black-edge edge-right"></div>
+              <div class="background-edge background-edge-left"></div>
+              <div class="background-edge background-edge-right"></div>
+              <div class="dreieck-background"></div>
+            </div>
+          </div>
+          <div id="background_navigation">
+            <div class="link-container">
+              <a class="links" href="#home">
+                <i class="fa-solid fa-house"></i>
+                <p>Home</p>
+              </a>
+            </div>
+            <div class="link-container">
+              <a class="rechts" href="#ueber-mich">
+                <p>Über mich</p>
+                <i class="fa-solid fa-address-card"></i>
+              </a>
+            </div>
+            <div class="link-container">
+              <a class="links" href="#galerie">
+                <i class="fa-solid fa-images"></i>
+                <p>Galerie</p>
+              </a>
+            </div>
+            <div class="link-container">
+              <a class="rechts" href="#projekte">
+                <p>Projekte</p>
+                <i class="fa-brands fa-r-project"></i>
+              </a>
+            </div>
+
+            <div class="link-container">
+              <div class="maincontainer">
+                <div class="socials">
+                  <a href="https://twitter.com/d_nayte" target="_blank">
+                    <img src="./src/img/icons/Twitter/icons8-twitter-48.png" alt="" />
+                  </a>
+                  <a href="https://www.instagram.com/d.nayte/" target="_blank">
+                    <img src="./src/img/icons/Instagram/icons8-instagram-48.png" alt="" />
+                  </a>
+                  <a href="https://www.twitch.tv/dnayte" target="_blank">
+                    <img src="./src/img/icons/Twitch/icons8-twitch-48.png" alt="" />
+                  </a>
+                </div>
+                <div class="socials-container-li"></div>
+                <div class="socials-container-re"></div>
+              </div>
+            </div>
+            <div class="logo-container">
+              <img src="./src/img/LogoKreis.png" id="logo" alt="Logo: Kleienr affe mit Controller" />
+              <div id="logo_shadow"></div>
+            </div>
+          </div>
+        </section>
+      </nav>
+
+      <!-- Mobile Nav -->
+      <nav id="mobile">
+        <div class="mobileBackground">
+          <a class="navLink home active" href="#home">
+            <i class="fa-solid fa-house"></i>
+            <p>Home</p>
+          </a>
+          <a class="navLink projekt" href="#projekte">
+            <i class="fa-brands fa-r-project"></i>
+            <p>Projekte</p>
+          </a>
+          <a class="navLink galerie" href="#galerie">
+            <i class="fa-solid fa-images"></i>
+            <p>Galerie</p>
+          </a>
+          <a class="navLink ueberMich" href="#ueber-mich">
+            <i class="fa-solid fa-address-card"></i>
+            <p>Über mich</p>
+          </a>
+          <div class="bubbleBackground"></div>
+        </div>
+      </nav>
+    </section>
+
+    <!-- Home bereich----------------------------------------------------------------- -->
+    <section id="home">
+      <article>
+        <ul>
+          <li>
+            <img src="./src/img/rect860.png" alt="" />
+          </li>
+          <li>
+            <h1>YOUR DESIRE</h1>
+          </li>
+          <li>
+            <img src="./src/img/rect849.png" alt="" />
+          </li>
+          <li>
+            <h2>IS MY</h2>
+          </li>
+          <li>
+            <h2>PASSION</h2>
+          </li>
+          <li>
+            <img src="./src/img/Rechner.png" alt="" />
+          </li>
+        </ul>
+      </article>
+    </section>
+
+    <!-- Kontakt Bereich ------------------------------------------------>
+    <aside id="form-absolute" class="">
+      <div id="formular-container">
+        <h1 id="kontakt-btn">Kontakt</h1>
+        <form action="https://form.taxi/s/9kx2iei6" method="post" id="formular">
+          <label for="name">Name</label>
+          <input type="text" name="name" id="name" placeholder="Name" required />
+          <label for="email">Email</label>
+          <input type="email" name="email" id="email" placeholder="Email Addresse (optional)" />
+          <label for="nachricht">Nachricht</label>
+          <textarea name="nachricht" id="textnachricht" cols="50" rows="6" placeholder="Ihre Nachricht" required></textarea>
+          <button type="submit" id="submit-btn" class="form_btn">Absenden</button>
+        </form>
+      </div>
+    </aside>
+
+    <article id="form_response">
+      <div class="response">
+        <p></p>
+        <button id="response_btn" class="form_btn">OK</button>
+      </div>
+    </article>
+
+    <!-- Über mich Bereich------------------------------------------------------ -->
+    <section id="ueber-mich">
+      <h1>Über mich</h1>
+      <div class="ueber-mich-container">
+        <div class="profilfoto">
+          <img src="./src/img/ueberMichBereich/Profilfoto.png" alt="" />
+          <span><p>Andy Schunke, Webentwickler</p></span>
+        </div>
+        <article class="ueber-mich-inhalt">
+          <ul>
+            <li><h2>Meine Hobbys</h2></li>
+            <li>Gaming</li>
+            <li>Programmieren</li>
+            <li>Streamen</li>
+            <li>Fitness</li>
+            <li>Motorrad fahren</li>
+            <li>Videobearbeitung</li>
+          </ul>
+          <p>
+            Mein Name ist Andy Schunke. Obwohl ich erst den Weg eines Fernmeldeanlagen-Elektronikers gegangen bin, welchen ich leider aufgrund widriger Umstände
+            abbrechen musste, habe ich nun nach langen Umwegen das Ziel in Sicht, der des Frontend Developers. Abgeschlossen habe ich meine
+            "Absicherungsausbildung“ 2007 als Ausbaufacharbeiter - Fliesen-, Platten- u. Mosaik. Da ich diesen Berufsweg niemals einschlagen wollte, bin ich
+            dank einer Personaldienstleistungsfirma schnell als Maschinenbediener aufgefallen und damit mehr in die richtige Richtung gelenkt worden. Allerdings
+            erwischte mich die Weltwirtschaftskrise 2009 als junger Facharbeiter mit voller Wucht und zwang mich erneut, nach Perspektiven umzuschauen.
+            Glücklicherweise erhielt ich das Angebot, mein Horizont zu erweitern und in dem Bereich der CNC-Metallbearbeitung Fuß zu fassen. Natürlich!! Schnell
+            entdeckte ich eine enorme Begeisterung für die Programmierung, insbesondere hier die Mazatrol-CNC-Steuerung. Ich nutzte jede Möglichkeit um mein
+            Wissen zu erweitern, arbeitete Lehrbücher durch und tat alles dafür ein vollwertiger und nützlicher Mitarbeiter zu werden. Nach ca. sechs Monaten
+            bekam ich meine erste eigene CNC-Maschine zugeteilt, arbeitete eine Jahr nach Zuteilung völlig eigenständig als Zerspanungsmechaniker und
+            Schichtleiter, höchst qualitativ mit der Medizintechnik u. a. als Kunden für insgesamt sechs Jahre. Nach dieser Zeit habe ich mich aus finanziellen
+            Gründen bei der Weltfirma Samag Group als Schichtleiter etabliert und leiste meinen Beitrag bis heute. <br />
+            Meinen ersten PC hatte ich bereits mit 8 Jahren und alles rund um dieses Thema war schon immer mein größtes Hobby und meine größte Leidenschaft.
+            Durch das Streamen auf Twitch bin ich nebst Video- und Grafikbearbeitung auch auf das Thema Programmierung gestoßen. Bei dem Versuch mein eigenes,
+            umfangreiches und dynamisches Touchportal Overlay allgemein zugänglich zu machen mit einer simplen Importierung für Verbraucher bin ich auf das
+            Thema JavaScript Programmierung gestoßen. Das es generell möglich ist, ohne Studium/Ausbildung, sich als Programmierer ausbilden zu lassen und einen
+            Job zu finden war mir bis dahin gar nicht bewusst. Eine unglaubliche Chance! Also habe ich mich direkt über Udemy in HTML5 CSS und JS ausbilden
+            lassen und arbeite derzeit an eigenen kleinen Projekten und vertiefe mein Wissen um als Frontend Entwickler meine berufliche Laufbahn starten und
+            endlich meine Passion zum Beruf machen zu können.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Galerie bereich----------------------------------------------------------------- -->
+    <section id="galerie">
+      <div class="galerie-container">
+        <span><h1>Galerie</h1></span>
+        <div class="bilder bild_p_1">
+          <figure>
+            <div class="img">
+              <img src="./src/img/Galerie/GamingPC.png" alt="PC-Gehäuse groß" loading="lazy" />
+            </div>
+            <figcaption>
+              Mein Gaming-PC. Das Herzstück ist ein Ryzen 5600x, unterstützt von 2 RAM Sticks mit á 8GB 3200MHz und abgerundet mit einer Radeon 5700XT.
+            </figcaption>
+          </figure>
+        </div>
+        <div class="bilder bild_p_2">
+          <figure>
+            <div class="img">
+              <img src="./src/img/Galerie/StreamingPC.png" alt="PC-Gehäuse klein" loading="lazy" />
+            </div>
+            <figcaption>
+              Mein Stream-PC. Ein Multitask Experte der dank des Ryzen 5800x mit 2 RAM Sticks á 8GB 3200MHz bereits jedes Video in Sekunden gerendert hat dank
+              der Unterstützung der Radeon RX 480.
+            </figcaption>
+          </figure>
+        </div>
+        <div class="bilder bild_p_3">
+          <figure>
+            <div class="img">
+              <img src="./src/img/Galerie/Arbeitsplatz.png" alt="Computertisch mit 3 Monitoren" loading="lazy" />
+            </div>
+            <figcaption>
+              Maximale Usability dank FHD Monitoren mit Blaufilter, voll vernetzten Rechnern über Gigabyte LAN und eine lokale Anbindung an eine 2TB HDD als
+              Backup. Auf
+              <a id="yt_link" href="https://www.youtube.com/watch?v=aFjrU1KKI0k" target="_blank">Youtube</a>
+              das Video von dem Umbau des Raumes.
+            </figcaption>
+          </figure>
+        </div>
+        <div class="bilder bild_p_4">
+          <figure>
+            <div class="img">
+              <img src="./src/img/Galerie/ichundenzo.png" alt="Ich und mein Sohn auf der Rutsche" loading="lazy" />
+            </div>
+            <figcaption>Ein Sommerausflug zu Verwandten mit meinem Herzchen.</figcaption>
+          </figure>
+        </div>
+        <div class="bilder bild_p_5">
+          <figure>
+            <div class="img">
+              <img src="./src/img/Galerie/Motorrad.jpg" alt="Foto von mir auf Motorrad" loading="lazy" />
+            </div>
+            <figcaption>
+              2014 habe ich mir die Yamaha XJ6 angeschafft. Sie musste auch leider schon einiges mitmachen, aber schnurrt immer noch wie ein Kätzchen.
+            </figcaption>
+          </figure>
+        </div>
+        <div class="bilder bild_p_6">
+          <figure>
+            <div class="img">
+              <img src="./src/img/Galerie/Katzen.png" alt="Kollage von Katzen" loading="lazy" />
+            </div>
+            <figcaption>Unsere 3 etwas haarigeren Babys von ihrer besseren Seite.</figcaption>
+          </figure>
+        </div>
+
+        <div class="bilder bild_p_7">
+          <figure>
+            <div class="img">
+              <img src="./src/img/Galerie/Familie.png" alt="Familienfoto" loading="lazy" />
+            </div>
+            <figcaption>Just a happy Family</figcaption>
+          </figure>
+        </div>
+
+        <div class="bilder bild_p_8">
+          <figure>
+            <div class="img">
+              <img src="./src/img/Galerie/oesterrreich.png" alt="Kollage aus Österreich" loading="lazy" />
+            </div>
+            <figcaption>Zu Besuch in bei Freunden 2016 in Österreich, die wir Online kennengelernt haben und heute noch Kontakt pflegen.</figcaption>
+          </figure>
+        </div>
+
+        <div class="bilder bild_p_9">
+          <figure>
+            <div class="img">
+              <img src="./src/img/Galerie/Touchportal.png" alt="..." loading="lazy" />
+            </div>
+            <figcaption>
+              Mein dynamisches Touchportal UI. Ändert, in der Mitte des Screens, je nach Auswahl die Optionen und aktualisiert regelmäßig Informationen.
+            </figcaption>
+          </figure>
+        </div>
+
+        <div class="bilder bild_p_10">
+          <figure>
+            <div class="img">
+              <img src="./src/img/Galerie/LaserTag.png" alt="..." loading="lazy" />
+            </div>
+            <figcaption>Laser Tag mit Freunden und Online Bekanntschaften aus ganz Deutschland.</figcaption>
+          </figure>
+        </div>
+      </div>
+
+      <aside id="slideshow-container" class="activeSlide">
+        <div id="slideshow" class="carousel slide" data-bs-ride="carousel">
+          <button type="button" class="btn-close-white" id="close-slider" data-bs-target="slideshow" aria-label="Close">X</button>
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#slideshow" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#slideshow" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#slideshow" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#slideshow" data-bs-slide-to="3" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#slideshow" data-bs-slide-to="4" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#slideshow" data-bs-slide-to="5" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#slideshow" data-bs-slide-to="6" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#slideshow" data-bs-slide-to="7" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#slideshow" data-bs-slide-to="8" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#slideshow" data-bs-slide-to="9" aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item picture1">
+              <img src="./src/img/Galerie/GamingPC.png" class="d-block w-100" alt="..." loading="lazy" />
+              <div class="carousel-caption d-none">
+                <h5>First slide label</h5>
+                <p></p>
+              </div>
+            </div>
+            <div class="carousel-item picture2">
+              <img src="./src/img/Galerie/StreamingPC.png" class="d-block w-100" alt="..." loading="lazy" />
+              <div class="carousel-caption d-none">
+                <h5>Second slide label</h5>
+                <p></p>
+              </div>
+            </div>
+            <div class="carousel-item picture3">
+              <img src="./src/img/Galerie/Arbeitsplatz.png" class="d-block w-100" alt="..." loading="lazy" />
+              <div class="carousel-caption d-none">
+                <h5>Third slide label</h5>
+                <p></p>
+              </div>
+            </div>
+            <div class="carousel-item picture4">
+              <img src="./src/img/Galerie/ichundenzo.png" class="d-block w-100" alt="..." loading="lazy" />
+              <div class="carousel-caption d-none">
+                <h5>Third slide label</h5>
+                <p></p>
+              </div>
+            </div>
+            <div class="carousel-item picture5">
+              <img src="./src/img/Galerie/Motorrad.jpg" class="d-block w-100" alt="..." loading="lazy" />
+              <div class="carousel-caption d-none">
+                <h5>First slide label</h5>
+                <p></p>
+              </div>
+            </div>
+            <div class="carousel-item picture6">
+              <img src="./src/img/Galerie/Katzen.png" class="d-block w-100" alt="..." loading="lazy" />
+              <div class="carousel-caption d-none">
+                <h5>First slide label</h5>
+                <p></p>
+              </div>
+            </div>
+            <div class="carousel-item picture7">
+              <img src="./src/img/Galerie/Familie.png" class="d-block w-100" alt="..." loading="lazy" />
+              <div class="carousel-caption d-none">
+                <h5>First slide label</h5>
+                <p></p>
+              </div>
+            </div>
+            <div class="carousel-item picture8">
+              <img src="./src/img/Galerie/oesterrreich.png" class="d-block w-100" alt="..." loading="lazy" />
+              <div class="carousel-caption d-none">
+                <h5>First slide label</h5>
+                <p></p>
+              </div>
+            </div>
+            <div class="carousel-item picture9">
+              <img src="./src/img/Galerie/Touchportal.png" class="d-block w-100" alt="..." loading="lazy" />
+              <div class="carousel-caption d-none">
+                <h5>First slide label</h5>
+                <p></p>
+              </div>
+            </div>
+            <div class="carousel-item picture10">
+              <img src="./src/img/Galerie/LaserTag.png" class="d-block w-100" alt="..." loading="lazy" />
+              <div class="carousel-caption d-none">
+                <h5>First slide label</h5>
+                <p></p>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#slideshow" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#slideshow" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </aside>
+    </section>
+
+    <!-- Projekte Bereich ------------------------------------------------------- -->
+    <section id="projekte">
+      <h1>Projekte</h1>
+      <div class="projekt-container"></div>
+    </section>
+
+    <!-- Footer Bereich -->
+    <footer id="footer">
+      <span><p>Homepage Andy Schunke</p></span>
+      <span><a href="/impressum.html">Impressum</a></span>
+    </footer>
+    <!-- Scripte -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./src/js/MyWebside.js" defer></script>
+  </body>
+</html>
