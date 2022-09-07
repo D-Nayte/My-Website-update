@@ -35,7 +35,7 @@ kopf_up.src = "./src/img/snake_kopf_up.png";
 let kopf_down = new Image();
 kopf_down.src = "./src/img/snake_kopf_down.png";
 let background_image = new Image();
-background_image.src = "/src/Projekte/Snake/src/img/background2.png";
+background_image.src = "./src/img/background2.png";
 
 let ctx = canvas.getContext("2d");
 let width = canvas.width;
